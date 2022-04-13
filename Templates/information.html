@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Results</title>
+	</head>
+	<body>
+		<table width = "70%" border = "1">
+			<tr>
+				<th><p>School</p></th>
+				<th><p>Name</p></th>
+				<th><p>Department</p></th>
+				<th><p>Contact</p></th>
+				<th><p>Address</p></th>
+			</tr>
+			
+			{% for info in lst %}
+				<tr>
+					<td>{{ info[0] }}</td>
+					<td>{{ info[1] }}</td>
+					<td>{{ info[2] }}</td>
+					<td>{{ info[3] }}</td>
+					<td>{{ info[4] }}</td>
+				</tr>
+			{% endfor %}
+			<br>
+		</table>
+	</body>
+</html>
