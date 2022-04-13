@@ -28,4 +28,4 @@ def search():
     return render_template("information.html", lst = lst)
 
 if __name__ == '__main__':
-    app.run(port = 5678)
+    app.run(debug = True, use_reloader = True)
